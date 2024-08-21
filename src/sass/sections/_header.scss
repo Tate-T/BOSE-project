@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #191919;
+
+
+  &__nav-list {
+    display: flex;
+    gap: 77px;
+  }
+
+  &__item {
+  }
+
+  &__text {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
