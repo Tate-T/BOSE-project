@@ -3,7 +3,7 @@
         <div class="history__box">
             <div class="history__boxes">
                 <h2 class="history__title">BRAND CREATION HISTORY</h2>
-                <p class="history__content">The history of Bose Corporation began
+                <p class="history__contents">The history of Bose Corporation began
                     with disappointment. In 1956, MIT graduate student Amar Bose bought one of the best stereo systems
                     at the time for his home.
                     After a few minutes of listening to the audio recording, his bewilderment turned
@@ -11,13 +11,58 @@
                 <p class="history__content">From Amar's point of view, the sound was
                     so flat and unnatural that it was better not to listen to the music at all than to listen to it in
                     such a distorted form.</p>
-                <img class="history__photo" src="./image/desktop/creation-1@desktop-1x.webp" alt="man">
+                    <picture>
+                        <source
+                          srcset="./image/desktop/creation-2@desktop-1x.webp 1x,
+                          ./image/desktop/creation-2@desktop-2x.webp 2x"
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          srcset="./image/table/creation-2@table-1x.webp 1x,
+                          ./image/table/creation-2@table-2x.webp 2x"
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="./image/phone/creation-2@phone-1x.webp 1x,
+                        ./image/phone/creation-2@phone-2x.webp 2x"
+                          media="(max-width: 767px)"
+                        />
+                        <img
+                          class="history__photo"
+                          alt="man"
+                          src="./image/phone/creation-2@phone-1x.webp 1x"
+                        />
+                      </picture>
             </div>
             <div class="history__block">
-                <img class="history__image" src="./image/desktop/creation-2@desktop-1x.webp" alt="man-with-camera">
+                <picture>
+                    <source
+                      srcset="./image/desktop/creation-1@desktop-1x.webp 1x,
+                      ./image/desktop/creation-1@desktop-2x.webp 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./image/table/creation-1@table-1x.webp 1x,
+                      ./image/table/creation-1@table-2x.webp 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="./image/phone/creation-1@phone-1x.webp 1x,
+                    ./image/phone/creation-1@phone-2x.webp 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="history__image"
+                      alt="man-with-camera"
+                      src="./image/phone/creation-1@phone-1x.webp 1x"
+                    />
+                  </picture>
                 <p class="history__content">Bose's frustration grew into a firm determination to build audio equipments
                     that would reproduce sound
                     with impeccable accuracy and naturalness</p>
+                <svg class="history__icon" width="34" height="25">
+                    <use href="./image/desktop/symbol-defs.svg#icon-quotes"></use>
+                </svg>
                 <h3 class="history__text">Never stop dreaming. Always dream of the best, and think about how to achieve
                     it.</h3>
                 <p class="history__name">Amar Bose is a company founder </p>

@@ -1,0 +1,46 @@
+.bose-ar {
+
+
+    &__box {
+        display: flex;
+        gap: 170px;
+    }
+
+    &__boxes {}
+
+    &__title {
+        color: #E7E7E7;
+font-family: Gilroy;
+font-size: 54px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 64.8px */
+letter-spacing: 1.08px;
+text-transform: uppercase;
+margin-bottom: 50px;
+    }
+
+    &__text {
+        color: #E7E7E7;
+font-family: Gilroy;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 35px */
+margin-bottom: 20px;
+    }
+
+    &__content {
+        color: rgba(255, 255, 255, 0.80);
+font-family: Gilroy;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 145%; /* 29px */
+width: 380px;
+    }
+
+    &__case {}
+
+    &__photo {}
+}

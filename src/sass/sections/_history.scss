@@ -1,0 +1,80 @@
+.history {
+
+
+&__box {
+    display: flex;
+    gap: 150px;
+}
+&__boxes {
+}
+&__title {
+    color: #E7E7E7;
+font-family: Gilroy;
+font-size: 54px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 64.8px */
+letter-spacing: 1.08px;
+text-transform: uppercase;
+width: 279px;
+margin-bottom: 50px;
+}
+&__content {
+    color: rgba(255, 255, 255, 0.80);
+font-family: Gilroy;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 145%; /* 29px */
+width: 400px;
+margin-bottom: 74px;
+}
+
+&__contents {
+    color: rgba(255, 255, 255, 0.80);
+font-family: Gilroy;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 145%; /* 29px */
+width: 400px;
+margin-bottom: 120px;
+}
+
+&__item{
+    display: flex;
+
+    gap: 74px;
+}
+&__photo {
+}
+&__block {
+}
+&__image {
+    margin-bottom: 50px;
+}
+&__text {
+    color: #E7E7E7;
+font-family: Gilroy;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 125%; /* 35px */
+margin-bottom: 32px;
+}
+&__name {
+    color: rgba(255, 255, 255, 0.40);
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 70%; /* 11.2px */
+}
+
+&__icon{
+    fill: #df3d3a;
+    width: 34px;
+    height: 25px;
+    margin-bottom: 50px;
+}
+}

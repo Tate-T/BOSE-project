@@ -1,0 +1,11 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-elipse" viewBox="0 0 32 32">
+<path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+</symbol>
+<symbol id="icon-quotes" viewBox="0 0 44 32">
+<path d="M0 15.411v-15.411h17.875v11.603c0 12.087-5.958 18.886-17.875 20.397v-6.346c3.010-0.786 5.068-1.934 6.173-3.445 1.167-1.511 1.874-3.777 2.119-6.799h-8.293z"></path>
+<path d="M25.645 15.411v-15.411h17.875v11.603c0 12.087-5.958 18.886-17.875 20.397v-6.346c3.010-0.786 5.068-1.934 6.173-3.445 1.167-1.511 1.874-3.777 2.119-6.799h-8.293z"></path>
+</symbol>
+</defs>
+</svg>
