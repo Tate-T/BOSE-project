@@ -1,0 +1,71 @@
+.reviews {
+
+    &__box {
+        width: 920px;
+        height: 590px;
+        flex-shrink: 0;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        margin-right: 150px;
+        margin-left: -50px
+    }
+
+    &__title {
+        color: #E7E7E7;
+        font-family: Gilroy;
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        /* 64.8px */
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+    }
+
+        &__minisubtext {
+            color: #DF3D3A;
+            opacity: 1;
+            font-family: "Roboto Condensed";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+            /* 35px */
+        }
+
+    &__minitext {
+        color: #DF3D3A;
+        font-family: "Roboto Condensed";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        /* 35px */
+        opacity: 0.2;
+    }
+
+    &__texted {
+        color: #DF3D3A;
+        font-family: Gilroy;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        /* 35px */
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.80);
+        font-family: Gilroy;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 145%;
+        /* 29px */
+    }
+
+    &__fix {
+        display: flex;
+    }
+}
