@@ -1,4 +1,5 @@
 .reviews {
+    margin-bottom: -50px;
 
     &__box {
         width: 920px;
@@ -15,6 +16,7 @@
         color: #E7E7E7;
         font-family: Gilroy;
         font-size: 54px;
+        margin-bottom: 50px;
         font-style: normal;
         font-weight: 600;
         line-height: 120%;
@@ -23,32 +25,40 @@
         text-transform: uppercase;
     }
 
-        &__minisubtext {
-            color: #DF3D3A;
-            opacity: 1;
-            font-family: "Roboto Condensed";
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 125%;
-            /* 35px */
-        }
-
-    &__minitext {
-        color: #DF3D3A;
+    &__s {
+        color: #e4322f;
+        font-family: "Roboto Condensed";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
         font-family: "Roboto Condensed";
         font-size: 28px;
         font-style: normal;
         font-weight: 400;
         line-height: 125%;
         /* 35px */
-        opacity: 0.2;
+        opacity: 1;
+        margin-left: -53px;
+        position: absolute;
+    }
+
+    &__minisubtext {
+        color: #df3d3a83;
+        font-family: "Roboto Condensed";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        margin-left: 53px;
+        line-height: 125%;
+        /* 35px */
     }
 
     &__texted {
         color: #DF3D3A;
         font-family: Gilroy;
         font-size: 28px;
+        margin-bottom: 18px;
         font-style: normal;
         font-weight: 600;
         line-height: 125%;
@@ -70,19 +80,9 @@
     }
 }
 
-// body {
-//     position: relative;
-//     height: 100vh;
-//     background-color: #300532;
-// }
-
 #slideContainer {
-    width: 720px;
     margin: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, 0%);
 }
 
 .sliderBtn {
@@ -131,14 +131,14 @@
     }
 }
 
-.slide p {
-    padding: 1rem 0;
-    background-color: white;
-    color: black;
-    text-align: center;
-    font-family: Nunito;
-    font-weight: 600;
-}
+// .slide p {
+//     padding: 1rem 0;
+//     background-color: white;
+//     color: black;
+//     text-align: center;
+//     font-family: Nunito;
+//     font-weight: 600;
+// }
 
 // img {
 //     max-width: 100%;
