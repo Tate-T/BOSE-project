@@ -1,0 +1,55 @@
+.footer {
+
+    &__container {
+        width: 300px;
+        padding: 0 10px;
+        margin: 0 auto;
+        outline: 1px solid red;
+        margin-bottom: 75px;
+
+        @media screen and (min-width: 768px) {
+            width: 768px;
+            padding: 0 30px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 1320px;
+            padding: 0 20px;
+        }
+    }
+
+    &__box {
+        display: flex;
+        gap: 267px;
+    }
+
+    &__boxes {}
+
+    &__list {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__list-item {}
+
+    &__link {
+        color: rgba(255, 255, 255, 0.30);
+        font-family: Gilroy;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        /* 20px */
+    }
+
+    &__boxing {}
+
+    &__phone {
+        color: rgba(255, 255, 255, 0.80);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

@@ -10,7 +10,28 @@
                     at the same time.</p>
             </div>
             <div class="bose-ar__case">
-                <img class="bose-ar__photo" src="./image/desktop/bose-ar@desktop-1x.webp" alt="woman-with-headphones">
+                <picture>
+                    <source
+                      srcset="./image/desktop/bose-ar@desktop-1x.webp 1x,
+                      ./image/desktop/bose-ar@desktop-2x.webp 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./image/table/bose-ar@table-1x.webp 1x,
+                      ./image/table/bose-ar@table-2x.webp 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="./image/phone/bose-ar@phone-1x.webp 1x,
+                    ./image/phone/bose-ar@phone-2x.webp 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="bose-ar__photo"
+                      alt="woman-with-headphones"
+                      src="./image/phone/bose-ar@phone-1x.webp 1x"
+                    />
+                  </picture>
             </div>
         </div>
     </div>

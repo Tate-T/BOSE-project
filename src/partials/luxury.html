@@ -1,7 +1,28 @@
 <section class="luxury">
     <div class="container">
     <h2 class="luxury__title">The luxury of silence</h2>
-    <img class="luxury__photo" src="./image/desktop/bg-luxury@desktop-1x.webp" alt="luxury">
+    <picture>
+        <source
+          srcset="./image/desktop/bg-luxury@desktop-1x.webp 1x,
+          ./image/desktop/bg-luxury@desktop-2x.webp 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="./image/table/bg-luxury@table-1x.webp 1x,
+          ./image/table/bg-luxury@table-2x.webp 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+        srcset="./image/phone/bg-luxury@phone-1x.webp 1x,
+        ./image/phone/bg-luxury@phone-2x.webp 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="luxury__photo"
+          alt="luxury"
+          src="./image/phone/bg-luxury@phone-1x.webp 1x"
+        />
+      </picture>
     <div class="luxury__box">
         <div class="luxury__boxes">
             <h2 class="luxury__text">Maximum enjoyment</h2>
