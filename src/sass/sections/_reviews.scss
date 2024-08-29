@@ -1,15 +1,14 @@
 .reviews {
-    margin-bottom: -50px;
+    margin-bottom: 170px;
+    margin-top: 170px;
 
     &__box {
         width: 920px;
         height: 590px;
         flex-shrink: 0;
-        display: flex;
         overflow: hidden;
-        justify-content: center;
-        margin-right: 150px;
-        margin-left: -50px
+        margin-right: 110px;
+         margin-left: -20px;
     }
 
     &__title {
@@ -31,16 +30,17 @@
         font-size: 28px;
         font-style: normal;
         font-weight: 400;
+        display: block;
         line-height: 125%;
         font-family: "Roboto Condensed";
         font-size: 28px;
         font-style: normal;
         font-weight: 400;
+        margin-right: 10px;
+        margin-left: 10px;
         line-height: 125%;
         /* 35px */
         opacity: 1;
-        margin-left: -53px;
-        position: absolute;
     }
 
     &__minisubtext {
@@ -49,7 +49,7 @@
         font-size: 28px;
         font-style: normal;
         font-weight: 400;
-        margin-left: 53px;
+        display: block;
         line-height: 125%;
         /* 35px */
     }
@@ -69,13 +69,37 @@
         font-family: Gilroy;
         font-size: 20px;
         font-style: normal;
+        margin-bottom: 90px;
         font-weight: 400;
         line-height: 145%;
-        /* 29px */
     }
+
+&__column-1 {
+    display: flex;
+    align-items: end;
+    height: 71px;
+}
+
+    &__column-2 {
+        display: flex;
+        height: 160px;
+        align-items: end;
+    }
+
+&__column-3 {
+    display: flex;
+    height: 240px;
+    align-items: end;
+}
 
     &__fix {
         display: flex;
+    }
+
+    &__video {
+        width: 920px;
+            height: 590px;
+            flex-shrink: 0;
     }
 }
 
@@ -86,7 +110,7 @@
 
 .sliderBtn {
     position: absolute;
-    background-color: rgba(48, 5, 50, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
     padding: 1rem;
@@ -129,34 +153,3 @@
         opacity: 1;
     }
 }
-
-// .slide p {
-//     padding: 1rem 0;
-//     background-color: white;
-//     color: black;
-//     text-align: center;
-//     font-family: Nunito;
-//     font-weight: 600;
-// }
-
-// img {
-//     max-width: 100%;
-//     border-radius: 0.4rem 0.4rem 0 0;
-//     display: block;
-//     margin: auto;
-// }
-
-// @media screen and (max-width: 722px) {
-//     #slideContainer {
-//         width: 100%;
-//     }
-
-//     .sliderBtn {
-//         padding: 0.5rem;
-//         font-size: 1rem;
-//     }
-
-//     .slide p {
-//         padding: 0.5rem 0;
-//     }
-// }
