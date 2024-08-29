@@ -1,5 +1,5 @@
 .hero {
-  
+
   &__list {
     display: flex;
     justify-content: space-between;
@@ -39,10 +39,27 @@
     margin-bottom: 90px;
   }
   &__link {
-    color: rgba(255, 255, 255, 0.90);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+  }
+
+  &__img {
+    @media screen and (min-width: 320px) {
+      width: 280px;
+      height: 240px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 394px;
+    }
+
+    @media screen and (min-width: 1320px) {
+      width: 700px;
+      height: 598px;
+    }
   }
 }

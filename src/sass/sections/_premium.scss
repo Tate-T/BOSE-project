@@ -1,0 +1,42 @@
+.premium {
+  padding-top: 176px;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+    width: 471px;
+    color: #e7e7e7;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 120%; /* 64.8px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: #e7e7e7;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 125%; /* 35px */
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    width: 510px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 29px */
+  }
+}
