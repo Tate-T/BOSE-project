@@ -1,13 +1,22 @@
 .luxury {
-    background: #191919;
+    padding-bottom: 52px;
+
+
+    @media screen and (min-width: 768px) {
+       padding-bottom: 100px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 170px;
+    }
+
 
     &__title {
         width: 103%;
         padding-bottom: 32px;
         color: #e7e7e7;
-        font-family: Gilroy;
         font-size: 24px;
-        font-style: normal;
         font-weight: 600;
         line-height: 120%;
         letter-spacing: .48px;
@@ -36,42 +45,69 @@
     }
 
     &__photo {
+        margin-bottom: 32px;
+
+
+        @media screen and (min-width:1200px) {
         margin-bottom: 50px;
-      width: auto;
+        }
+
     }
 
     &__box {
         display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 40px;
+        flex-direction: column;
+        gap: 42px;
+
+
+     @media screen and (min-width:768px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    @media screen and (min-width:1200px) {
+    gap: 40px;
+    }
     }
 
     &__boxes {}
 
     &__text {
-        width: 412px;
         height: 33px;
         flex-shrink: 0;
         color: #E7E7E7;
-        font-family: Gilroy;
-        font-size: 28px;
-        font-style: normal;
+        font-size: 20px;
         font-weight: 600;
         line-height: 125%;
-        /* 35px */
         margin-bottom: 20px;
-    }
+
+
+        @media screen and (min-width:1200px) {
+                font-size: 28px;
+                width: 412px;
+                height: 33px;
+            }
+        }
 
     &__content {
         color: rgba(255, 255, 255, 0.80);
-        font-family: Gilroy;
-        font-size: 20px;
-        font-style: normal;
+        font-size: 14px;
         font-weight: 400;
         line-height: 145%;
-        /* 29px */
-        width: 492px;
+        width: 280px;
+
+
+        @media screen and (min-width:768px) {
+        font-size: 16px;
+        }
+
+
+        @media screen and (min-width:1200px) {
+         font-size: 20px;
+         width: 492px;
+        }
     }
 
     &__case {}
