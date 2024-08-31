@@ -1,80 +1,196 @@
 .history {
+    padding-bottom: 52px;
 
 
-&__box {
-    display: flex;
-    gap: 150px;
-}
-&__boxes {
-}
-&__title {
-    color: #E7E7E7;
-font-family: Gilroy;
-font-size: 54px;
-font-style: normal;
-font-weight: 600;
-line-height: 120%; /* 64.8px */
-letter-spacing: 1.08px;
-text-transform: uppercase;
-width: 279px;
-margin-bottom: 50px;
-}
-&__content {
+    @media screen and (min-width: 768px) {
+       padding-bottom: 100px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 170px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+
+
+        @media screen and (min-width: 768px) {
+            gap: 60px;
+            flex-direction: row;
+        }
+
+
+        @media screen and (min-width: 1200px) {
+            gap: 150px;
+        }
+    }
+
+    &__boxes {}
+
+    &__title {
+        color: #E7E7E7;
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+
+
+        @media screen and (min-width: 768px) {
+            font-size: 30px;
+            letter-spacing: 0.6px;
+            margin-bottom: 32px;
+        }
+
+
+        @media screen and (min-width: 1200px) {
+            font-size: 54px;
+            letter-spacing: 1.08px;
+            width: 279px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__content {
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 145%;
+        margin-bottom: 32px;
+
+
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+            margin-bottom: 85px;
+        }
+
+
+        @media screen and (min-width: 1200px) {
+           font-size: 20px;
+           margin-bottom: 74px;
+        }
+    }
+
+
+    &__contents {
     color: rgba(255, 255, 255, 0.80);
-font-family: Gilroy;
-font-size: 20px;
-font-style: normal;
+font-size: 14px;
 font-weight: 400;
-line-height: 145%; /* 29px */
-width: 400px;
-margin-bottom: 74px;
-}
-
-&__contents {
-    color: rgba(255, 255, 255, 0.80);
-font-family: Gilroy;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 145%; /* 29px */
-width: 400px;
-margin-bottom: 120px;
-}
-
-&__item{
-    display: flex;
-
-    gap: 74px;
-}
-&__photo {
-}
-&__block {
-}
-&__image {
-    margin-bottom: 50px;
-}
-&__text {
-    color: #E7E7E7;
-font-family: Gilroy;
-font-size: 28px;
-font-style: normal;
-font-weight: 600;
-line-height: 125%; /* 35px */
+line-height: 145%;
 margin-bottom: 32px;
-}
-&__name {
-    color: rgba(255, 255, 255, 0.40);
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 70%; /* 11.2px */
+
+
+@media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 0;
+ }
+
+
+ @media screen and (min-width: 1200px) {
+    font-size: 20px;
+ }
 }
 
-&__icon{
-    fill: #df3d3a;
-    width: 34px;
-    height: 25px;
-    margin-bottom: 50px;
+
+&__blocks{
+   margin-bottom: 33px;
+   display: flex;
+   flex-direction: column-reverse;
+
+
+   @media screen and (min-width: 768px) {
+    margin-bottom: 133px;
+    flex-direction: column;
+ }
+
+
+ @media screen and (min-width: 1200px) {
+   margin-bottom: 125px;
+ }
 }
+
+
+&__boxing{
+    display: flex;
+    flex-direction: column-reverse;
+
+
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+      }
+}
+
+
+    &__photo {
+        margin-bottom: 32px;
+
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 51px;
+          }
+
+
+        
+    }
+
+    &__block {}
+
+    &__image {
+        margin-bottom: 32px;
+
+
+        @media screen and (min-width: 1768px) {
+        margin-bottom: 32px;
+        }
+
+
+        @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        }
+    }
+
+    &__text {
+        color: #E7E7E7;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 125%;
+        margin-bottom: 16px;
+        width: 280px;
+
+
+        @media screen and (min-width: 768px) {
+        font-size: 20px;
+        width: 294px;
+        margin-bottom: 32px;
+        }
+
+
+        @media screen and (min-width: 1200px) {
+        font-size: 28px;
+        width: 382px;
+        margin-bottom: 32px;
+        }
+    }
+
+    &__name {
+        color: rgba(255, 255, 255, 0.40);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 70%;
+
+
+        @media screen and (min-width: 768px) {
+        font-size: 16px;
+        }
+    }
+
+    &__icon {
+        fill: #df3d3a;
+        width: 34px;
+        height: 25px;
+        margin-bottom: 50px;
+    }
 }

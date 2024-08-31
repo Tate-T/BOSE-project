@@ -1,11 +1,22 @@
 .footer {
+    padding-bottom: 52px;
+
+
+    @media screen and (min-width: 768px) {
+       padding-bottom: 50px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 74px;
+    }
+
 
     &__container {
         width: 300px;
         padding: 0 10px;
         margin: 0 auto;
         outline: 1px solid red;
-        margin-bottom: 75px;
 
         @media screen and (min-width: 768px) {
             width: 768px;
@@ -13,42 +24,114 @@
         }
 
         @media screen and (min-width: 1200px) {
-            width: 1320px;
+            width: 1200px;
             padding: 0 20px;
         }
     }
 
     &__box {
         display: flex;
-        gap: 267px;
+        flex-direction: column;
+        gap: 52px;
+
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            gap: 145px;
+          }
+
+
+          @media screen and (min-width: 1200px) {
+            gap: 215px;
+          }
     }
 
-    &__boxes {}
+    &__boxes {
+        display: flex;
+        
+        gap: 45px;
+
+
+        @media screen and (min-width: 768px) {
+            gap: 139px;
+          }
+
+
+          @media screen and (min-width: 1200px) {
+            gap: 50px;
+          }
+
+    }
 
     &__list {
         display: flex;
-        gap: 50px;
+        flex-direction: column;
+        gap: 24px;
+        
+
+
+        @media screen and (min-width: 768px) {
+            gap: 24px;
+          }
+
+
+          @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 50px;
+        }
     }
 
-    &__list-item {}
+
+    &__lists{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 24px;
+        
+
+
+        @media screen and (min-width: 768px) {
+            gap: 24px;
+          }
+
+
+          @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 50px;
+        }
+    }
+
+    &__list-item {
+        height: 20px;
+    }
 
     &__link {
         color: rgba(255, 255, 255, 0.30);
-        font-family: Gilroy;
-        font-size: 16px;
-        font-style: normal;
+        font-size: 14px;
         font-weight: 400;
         line-height: 125%;
-        /* 20px */
+
+        
+        @media screen and (min-width: 1200px) {
+        line-height: 250%;
+          }
+          
+          
+          @media screen and (min-width: 1200px) {
+            font-size: 16px;
+            line-height: 125%;
+          }
     }
 
-    &__boxing {}
+    &__boxing {
+        display: flex;
+        align-items: end;
+    }
 
     &__phone {
         color: rgba(255, 255, 255, 0.80);
         font-family: Roboto;
         font-size: 16px;
-        font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
