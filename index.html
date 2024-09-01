@@ -21,7 +21,7 @@
     
     <title></title>
     <script type="module" crossorigin src="/BOSE-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/BOSE-project/assets/index-58a76b28.css">
+    <link rel="stylesheet" href="/BOSE-project/assets/index-a623da16.css">
   </head>
 
   <body>
@@ -39,6 +39,21 @@
         />
       </picture>
     </a>
+    <button type="button" class="menu__open js-open-menu">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="13"
+        viewBox="0 0 22 13"
+        fill="none"
+      >
+        <path
+          d="M22 12.5224H0V10.5782H22V12.5224ZM22 7.662H0V5.71783H22V7.662ZM22 2.80159H0V0.857422H22V2.80159Z"
+          fill="white"
+          fill-opacity="0.8"
+        />
+      </svg>
+    </button>
 
     <ul class="header__nav-list">
       <li class="header__item">
@@ -507,6 +522,52 @@
         </div>
     </div>
 </footer>
+    <div class="menu js-menu-container" data-menu>
+  <div class="container">
+    <div class="menu__box">
+      <picture>
+        <source
+          srcset="data:image/webp;base64,UklGRt4BAABXRUJQVlA4WAoAAAAQAAAAgQAADwAAQUxQSHwBAAABgBXbdlBnS0DClYCEOCgOgoPWAThoHQQHrw4iAQlXQiTcDzgQUBARE8CDn7jvE8BSW9z1EbDa4v4PsMTT6wNz9KzAHj3/AY+eFaw9tfGgi7au67qdFfgNWdetqRWWkP7nFzJsIcvaeXhgCbkC2EkzLOQKVOGGhXRjVg5jyErXqXzR30I6x+1khY9wYA6ZYVMZBpMDuLI+aZkf2FQ+WBwd5pAZcOGQQn64OYcs9LVk/aaQrRzboY3g4gMsIQ1c1SL/DDBXtVxcrzzq6mKrIywhDayJAmP0bMAWXfM7vkP68SQSWMgV2OLcDYbquqkdLGTzq4VXmgvnuJ98wSZ8gBQyc/OjMlRlvH4LmQ8WRx+YQmbAhXNzDllgDll4vYUsHPeTDC4q8B0yQalyBFcGLtweG9NtV3NKafqNo8Mccp+mpYkCc+g815ArLCFLujp0yfFOg11ddgO/cNXBoutOzxyvbD9A7eFGp2qw9bEu6ZXjwDHdN07TfQOG1HWkK1ZQOCA8AAAA0AMAnQEqggAQAD6RPJlIJaMioS4oALASCWkAAGVsym2yxmvsUSwAAP7YC///vFpf7SWAcbx//JjSQAAA 1x, data:image/webp;base64,UklGRnYDAABXRUJQVlA4WAoAAAAQAAAAAwEAHgAAQUxQSNUCAAABkFbbdt5GCgNDeGUgBhWDmoFdBDaDiEGMoAqDDIIRgzGDPgZjBvmWfXUl/48ICG7bSJJsVNfsEbSr4jrnB6YI5cbgEsSssBmCaq7O+WhW6CZdKA1rEpnnW2FefRnMNw5V0k+szpmbBMcbi+M77K00QpnS31hM8irK60t2uU3v0NKYmyJoeI0NaSHnSm48dNlO4I0SMuj+6Oj2+KLPKvKe2l0WQfSvaGq3moXaI7ZiGqew/BaZdL2YdoHsCqeqow4lU4BwY61ZIdAHovDs5BE7wXZ1LzkRSVUDO4E5n/phklpiggEfimYqJhIvqPwBttmM2AzWIzzYbvwcfBlo3kjWbVcK3jU9Kl8UtVnjAOJOYLpIjsFOlcR4VFRA7THhKRzLzCqNFp1bXdu7ryIPWeBhv222RWCXwSlUg9p1LuAEJv3E/zXsj3YNcb0PUHt0eApbOCajb7Jiag9zQGOjSznM632A2mPGUxgMvH47gDbPCScH0pqaqMQdT2aMxV/B2lSLMfSdqa8C9MbG5t0exBifuJvFP3Qn3LSWwtwOz5ODM6UZr2CnVt8xMA80lYB7gkiKyYiBBJEfMXUCT2dVNWKEmHKrqfSYi0lozxHhgtgJdsIcUUrdMQJac06WXVilVLDuwnouBmbdMd6ACPSYjG0yfkChb2HqjtF1Udt9YJkxws54gPVMe6hPyCwP1/wY/sBH5f9WXjOGvUVubPCYEzyr+G22+EEElX/t9lBfkGGPmmRE7eEyYmCbubyj4Qcg89/uY07QjQ0KUfzGBsyJKGqzwwXQU8HvJORTkZ9DygW5uMM2SCGEeMu4sUEUYTJvP+aFb+iLHpSWutQUJvIK5u45VydqswOxn353WRbJ/P4LX0cXXhmTa2CeTrvHcuuTiZuGsyHj6pMYHn72WKIlt2UZTYJvEv6+z+eHMw//hXi5XwuHfr2lrc9n79YN0DKbJZ5H3lbFAABWUDggegAAABAHAJ0BKgQBHwA+kTqaSSWjIqErXqgAsBIJaQAW2sKhAqfu7l/XWvVLy/ayJgVOLczw5+jpkzZQEc3Q4enFm+0AAP74zxn/+1Bn/kOj1ws0q//1jOs////7vUW59//94nte/x4hvGYnwAT9EwyZENgzFFf/xEjoAAAA 2x"
+        />
+        <img
+          class="menu__logo"
+          alt=""
+          src="./image/desktop/boes-logo@desktop-1x.webp 1x"
+        />
+      </picture>
+      <button class="menu__close js-close-menu button-close" type="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M18.0915 5.36396C18.482 5.75449 18.482 6.38765 18.0915 6.77818L13.1425 11.7272L18.0915 16.6777C18.482 17.0682 18.482 17.7014 18.0915 18.0919C17.701 18.4824 17.0678 18.4824 16.6773 18.0919L11.7282 13.1414L6.77779 18.0919C6.38727 18.4824 5.7541 18.4824 5.36358 18.0919C4.97306 17.7014 4.97306 17.0682 5.36358 16.6777L10.314 11.7272L5.36358 6.77817C4.97306 6.38764 4.97306 5.75448 5.36358 5.36396C5.75411 4.97343 6.38727 4.97343 6.7778 5.36396L11.7282 10.313L16.6773 5.36396C17.0678 4.97344 17.701 4.97344 18.0915 5.36396Z"
+            fill="white"
+            fill-opacity="0.8"
+          />
+        </svg>
+      </button>
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a class="menu__text" href="#capable">Characteristics</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__text" href="#history">History</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__text" href="#reviews">Reviews</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__text" href="#bose-nc">Payment and delivery</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
     
     
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
