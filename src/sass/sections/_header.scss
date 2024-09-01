@@ -1,12 +1,12 @@
 .header {
   display: flex;
-  align-items: center;
   background-color: #191919;
   padding-top: 64px;
   padding-bottom: 74px;
 
   &__box {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
