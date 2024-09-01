@@ -1,52 +1,90 @@
 .faq {
+    margin-bottom: 170px;
+    padding-bottom: -5px;
 
-    &__text {
-color: #E7E7E7;
-    font-family: "Roboto";
-    font-size: 54px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-    /* 64.8px */
-    letter-spacing: 1.08px;
-    text-transform: uppercase;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 112px;
     }
 
-    &__row {
-      display: flex;
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    &__text-1-1 {
-color: #E7E7E7;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 125%;
-    /* 35px */
+    &__subtitle {
+        color: #e7e7e7;
+        font-size: 54px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+        margin-bottom: 54px;
     }
 
-    &__text-1-2 {
-    color: #E7E7E7;
-        font-family: "Roboto";
+    &__numb {
+        color: #e7e7e7;
+        font-family: "Roboto Condensed";
         font-size: 28px;
-        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        margin-right: 32px;
+    }
+
+    &__text-1 {
+        color: #e7e7e7;
+        font-size: 28px;
+        margin-right: 579px;
         font-weight: 600;
         line-height: 125%;
-        /* 35px */
+    }
+
+    &__text-2 {
+        color: #e7e7e7;
+        font-size: 28px;
+        margin-right: 399px;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    &__text-3 {
+        color: #e7e7e7;
+        font-size: 28px;
+        margin-right: 275px;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    &__text-4 {
+        color: #e7e7e7;
+        font-size: 28px;
+        margin-right: 460px;
+        font-weight: 10px;
+        line-height: 125%;
     }
 
     &__button {
-    color: #E7E7E7;
-        font-family: "Roboto";
+        color: #e7e7e7;
+        font-family: "Roboto Condensed";
         font-size: 28px;
         font-style: normal;
         font-weight: 400;
         line-height: 70%;
-        /* 19.6px */
         width: 42px;
-            height: 42px;
-            flex-shrink: 0;
-            fill: rgba(255, 255, 255, 0.10);
+        height: 42px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        background-color: rgba(255, 255, 255, 0.10);
+    }
+
+    &__line {
+        width: 1440px;
+        height: 0px;
+        opacity: 0.1;
+        // background: $description-color;
+        margin-left: 0;
+        margin-top: 24px;
+        margin-bottom: 1px;
     }
 }
