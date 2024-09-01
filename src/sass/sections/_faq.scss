@@ -35,7 +35,7 @@
     &__text-1 {
         color: #e7e7e7;
         font-size: 28px;
-        margin-right: 699px;
+        margin-right: 521px;
         font-weight: 600;
         line-height: 125%;
     }
@@ -43,15 +43,16 @@
     &__text-2 {
         color: #e7e7e7;
         font-size: 28px;
-        margin-right: 519px;
+        margin-right: 339px;
         font-weight: 600;
         line-height: 125%;
     }
 
     &__text-3 {
-        color: #e7e7e7;
+        color: #3f3131;
         font-size: 28px;
-        margin-right: 395px;
+        color: #e7e7e7;
+        margin-right: 215px;
         font-weight: 600;
         line-height: 125%;
     }
@@ -59,7 +60,7 @@
     &__text-4 {
         color: #e7e7e7;
         font-size: 28px;
-        margin-right: 581px;
+        margin-right: 415px;
         font-weight: 10px;
         line-height: 125%;
     }
@@ -80,11 +81,63 @@
 
     &__line {
         width: 1440px;
-        height: 0px;
-        opacity: 0.1;
-        // background: $description-color;
+        height: 1px;
+        opacity: 1;
+            background: rgba(255, 255, 255, 0.80);
         margin-left: 0;
         margin-top: 24px;
         margin-bottom: 1px;
     }
+}
+
+details {
+    margin-bottom: 10px;
+    // border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+summary {
+    // padding: 10px;
+    // background-color: #f0f0f0;
+    cursor: pointer;
+    min-width: 1200px;
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.content {
+    // background-color: #fff;
+    // border-top: 1px solid #ccc;
+    padding: 0 10px;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.fine {
+    color: rgba(255, 255, 255, 0.80);
+        font-family: Gilroy;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 145%;
+        width: 897px;
+        margin-left: 62px;
 }
