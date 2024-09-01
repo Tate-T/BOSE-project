@@ -1,0 +1,142 @@
+.bose-nc {
+    margin-bottom: 170px;
+
+    &__title {
+        color: #E7E7E7;
+        font-family: 'Popins';
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        /* 64.8px */
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+    }
+
+    &__way {
+        width: 20px;
+        height: 20px;
+        transform: rotate(90deg);
+        flex-shrink: 0;
+        stroke-width: 2px;
+        stroke: #DF3D3A;
+    }
+
+    &__border-1 {
+        border: 1px solid white;
+        margin: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 79px;
+        height: 79px;
+        border-radius: 100px;
+    }
+
+    &__format-button {
+        display: flex;
+        margin-top: 37px;
+        margin-bottom: 37px;
+        gap: 20px;
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.80);
+        font-family: Gilroy;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        width: 271px;
+        line-height: 125%;
+        margin-right: 109px;
+        /* 20px */
+    }
+
+    &__border-2 {
+        border: 11px solid lightgray;
+        margin: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 79px;
+        height: 79px;
+        border-radius: 100px;
+    }
+
+    &__button-1 {
+        background: #101010;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        flex-shrink: 0;
+    }
+
+    &__button-2 {
+        background: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        flex-shrink: 0;
+    }
+
+    &__button-1:hover {
+        border: 2px solid red;
+    }
+
+    &__button-2:hover {
+        border: 2px solid #DF3D3A;
+    }
+
+    &__flex {
+        display: flex;
+    }
+
+    &__minitext {
+        color: #DF3D3A;
+        font-family: Roboto;
+        font-size: 54px;
+        font-style: normal;
+        margin-bottom: 32px;
+        margin-top: 50px;
+        font-weight: 600;
+        line-height: 120%;
+        /* 64.8px */
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+    }
+
+    &__minibutton {
+        color: rgba(255, 255, 255, 0.90);
+        font-family: Roboto;
+        font-size: 20px;
+        background: #DF3D3A;
+        font-style: normal;
+        width: 400px;
+        height: 68px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+    }
+
+    &__line {
+        width: 400px;
+        height: 1px;
+        margin-bottom: 25px;
+        margin-top: 26px;
+        opacity: 0.1;
+        background: rgba(255, 255, 255, 0.80);
+    }
+
+    &__img {
+        margin-left: 90px;
+    }
+}
+
+.forms {
+    display: flex;
+}
