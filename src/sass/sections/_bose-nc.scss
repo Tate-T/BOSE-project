@@ -24,19 +24,18 @@
 
     &__border-1 {
         border: 1px solid white;
-        margin: 2px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 79px;
-        height: 79px;
+        width: 69px;
+        height: 69px;
         border-radius: 100px;
     }
 
     &__format-button {
         display: flex;
-        margin-top: 37px;
-        margin-bottom: 37px;
+        margin-top: 43px;
+        margin-bottom: 43px;
         gap: 20px;
     }
 
@@ -53,28 +52,27 @@
     }
 
     &__border-2 {
-        border: 11px solid lightgray;
-        margin: 2px;
+        background: lightgray;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 79px;
-        height: 79px;
+        width: 52px;
+        height: 52px;
         border-radius: 100px;
     }
 
     &__button-1 {
         background: #101010;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         border-radius: 100px;
         flex-shrink: 0;
     }
 
     &__button-2 {
         background: white;
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         border-radius: 100px;
         flex-shrink: 0;
     }
@@ -89,6 +87,7 @@
 
     &__flex {
         display: flex;
+        gap: 150px;
     }
 
     &__minitext {
@@ -103,6 +102,14 @@
         /* 64.8px */
         letter-spacing: 1.08px;
         text-transform: uppercase;
+    }
+ 
+    &__minibutton:hover {
+        background-color: hsl(1, 60%, 44%);
+        transform: scale(1.1);
+transition-property: background-color, fill, color, box-shadow, border, transform;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__minibutton {
@@ -133,7 +140,7 @@
     }
 
     &__img {
-        margin-left: 90px;
+    
     }
 }
 
