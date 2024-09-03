@@ -1,33 +1,58 @@
 <section class="feedback">
-    <div class="container">
-        <div class="feedback__box">
-            <div class="feedback__boxes">
-                <ul class="feedback__list">
-                    <li class="feedback__title">Feedback</li>
-                    <li class="feedback__text">We'll help you find the right headphones for you.</li>
-                </ul>
-            </div>
-            <div class="feedback__boxing">
-                <form>
-                    <label class="feedback__name" for="name">Your name</label>
-                    <input class="feedback__input" type="text" name="name" id="name">
-
-                    <label for="email" class="feedback__name">Your e-mail</label>
-                    <input type="email" class="feedback__input" name="email" id="email">
-
-                    <label for="message" class="feedback__name">Send us a message</label>
-                    <textarea class="feedback__textarea" id="message" name="message"></textarea>
-
-                    <div class="feedback__checkbox">
-                        <input type="checkbox" class="feedback__input" name="privacy-policy" id="privacy-policy">
-                        <label class="feedback__name" for="privacy-policy">
-                            I agree to the <a href="#">privacy policy</a>
-                        </label>
-                    </div>
-                    <button type="submit" class="feedback__button">SEND</button>
-                </form>
-            </div>
-
+  <div class="container feedback__box">
+    <ul class="feedback__list">
+      <li class="feedback__title">Feedback</li>
+      <li class="feedback__text">
+        We'll help you find the right headphones for you.
+      </li>
+    </ul>
+    <div class="feedback__boxing">
+      <form action="" class="feedback__form">
+        <ul class="feedback__list">
+          <li class="feedback__item">
+            <input
+              placeholder="Your name"
+              class="feedback__input"
+              type="text"
+              name="name"
+              id="name"
+            />
+          </li>
+          <li class="feedback__item">
+            <input
+              placeholder="Your e-mail"
+              type="email"
+              class="feedback__input"
+              name="email"
+              id="email"
+            />
+          </li>
+          <li class="feedback__item">
+            <input
+              placeholder="Send us a message"
+              type="message"
+              class="feedback__textarea"
+              name="message"
+              id="message"
+            />
+          </li>
+        </ul>
+        <div class="feedback__checkbox">
+          <input
+            type="checkbox"
+            class="feedback__sqauare"
+            name="privacy-policy"
+            id="privacy-policy"
+          />
+          <label class="feedback__name-box" for="privacy-policy">
+            <p class="feedback__desc">I agree to the</p>
+            <a class="feedback__link" href="#">privacy policy</a>
+          </label>
         </div>
+        <button type="submit" class="feedback__button">
+          <p class="feedback__button-text">SEND</p>
+        </button>
+      </form>
     </div>
+  </div>
 </section>
