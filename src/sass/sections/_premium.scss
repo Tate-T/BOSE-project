@@ -2,6 +2,7 @@
   padding-top: 176px;
   display: flex;
 
+
   &__img {
 
     @media screen and (max-width: 767px) {
@@ -12,18 +13,19 @@
       position: absolute;
       left: 0;
       width: 304px;
-      height: 490px;
+      height: 539px;
     }
 
     @media screen and (min-width: 1320px) {
       width: 490px;
-      height: 516px;
+      height: 512px;
     }
   }
 
   &__box {
     display: flex;
     justify-content: end;
+    position: relative;
 
     @media screen and (max-width: 767px) {
       flex-direction: column;
@@ -34,7 +36,10 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    position: relative;
+
+    @media screen and (min-width: 768px) {
+margin-bottom: 61px;
+    }
 
     @media screen and (min-width: 1320px) {
       margin-bottom: 29px;
