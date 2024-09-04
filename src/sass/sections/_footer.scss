@@ -7,27 +7,27 @@
     }
 
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1330px) {
         padding-bottom: 74px;
     }
 
 
     &__container {
-        width: 300px;
-        padding: 0 10px;
-        margin: 0 auto;
-        outline: 1px solid red;
-
-        @media screen and (min-width: 768px) {
-            width: 768px;
-            padding: 0 30px;
-        }
-
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
-            padding: 0 20px;
-        }
-    }
+            width: 300px;
+            padding: 0 10px;
+            margin: 0 auto;
+            outline: 1px solid red;
+          
+            @media screen and (min-width: 768px) {
+              width: 768px;
+              padding: 0 30px;
+            }
+          
+            @media screen and (min-width: 1320px) {
+              width: 1320px;
+              padding: 0 20px;
+            }
+          }
 
     &__box {
         display: flex;
@@ -41,7 +41,7 @@
           }
 
 
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1330px) {
             gap: 215px;
           }
     }
@@ -57,7 +57,7 @@
           }
 
 
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1330px) {
             gap: 50px;
           }
 
@@ -75,7 +75,7 @@
           }
 
 
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1330px) {
             flex-direction: row;
             gap: 50px;
         }
@@ -95,7 +95,7 @@
           }
 
 
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1330px) {
             flex-direction: row;
             gap: 50px;
         }
@@ -112,12 +112,12 @@
         line-height: 125%;
 
         
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1330px) {
         line-height: 250%;
           }
           
           
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1330px) {
             font-size: 16px;
             line-height: 125%;
           }
