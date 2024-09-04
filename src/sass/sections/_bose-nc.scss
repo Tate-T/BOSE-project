@@ -52,12 +52,12 @@
     }
 
     &__border-2 {
-        background: lightgray;
+        background-color: lightgray;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 52px;
-        height: 52px;
+        width: 69px;
+        height: 69px;
         border-radius: 100px;
     }
 
@@ -103,13 +103,13 @@
         letter-spacing: 1.08px;
         text-transform: uppercase;
     }
- 
+
     &__minibutton:hover {
         background-color: hsl(1, 60%, 44%);
         transform: scale(1.1);
-transition-property: background-color, fill, color, box-shadow, border, transform;
-    transition-duration: 2s;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-property: background-color, fill, color, box-shadow, border, transform;
+        transition-duration: 2s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__minibutton {
@@ -130,6 +130,11 @@ transition-property: background-color, fill, color, box-shadow, border, transfor
         text-transform: uppercase;
     }
 
+    &__flex-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__line {
         width: 400px;
         height: 1px;
@@ -138,12 +143,36 @@ transition-property: background-color, fill, color, box-shadow, border, transfor
         opacity: 0.1;
         background: rgba(255, 255, 255, 0.80);
     }
-
-    &__img {
-    
-    }
 }
 
 .forms {
     display: flex;
+}
+
+#slideContainer {
+    margin: auto;
+    transform: translate(0%, 0%);
+    position: relative;
+    // width: 80%;
+    // max-width: 600px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: fadein 1s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
