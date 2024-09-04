@@ -12,9 +12,19 @@
     }
 
 
+    &__picture{
+        margin-bottom: 32px;
+
+
+        @media screen and (min-width:1330px) {
+        margin-bottom: 50px;
+        }
+    }
+
+
     &__title {
         width: 103%;
-        padding-bottom: 32px;
+        margin-bottom: 32px;
         color: #e7e7e7;
         font-size: 24px;
         font-weight: 600;
@@ -44,17 +54,12 @@
 
     }
 
-    &__photo {
-        margin-bottom: 32px;
 
+    &__photo {}
 
-        @media screen and (min-width:1330px) {
-        margin-bottom: 50px;
-        }
-
-    }
 
     &__box {
+        padding-top: 32px;
         display: flex;
         flex-direction: column;
         gap: 42px;
@@ -69,6 +74,7 @@
 
     @media screen and (min-width:1330px) {
     gap: 40px;
+    padding-top: 50px;
     }
     }
 

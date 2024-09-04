@@ -36,24 +36,9 @@
     &__case {}
 
 
-    &__photo{
-        width: 280px;
-    height: 268px;
 
-        
-        @media screen and (min-width:768px) {
-            width: 354px;
-               height: 442px;     
-                } 
+    &__photo{}
 
-
-        @media screen and (min-width:1330px) {
-       width: 590px;
-        height: 565px; 
-               
-           }
-        
-    }
 
 
     &__title {
@@ -140,6 +125,26 @@ font-size: 20px;
         margin-bottom: 24px;
         
     }
+    }
+
+
+    &__picture{
+
+        width: 280px;
+    height: 268px;
+
+        
+        @media screen and (min-width:768px) {
+            width: 354px;
+               height: 442px;     
+                } 
+
+
+        @media screen and (min-width:1330px) {
+       width: 590px;
+        height: 565px; 
+               
+           }
     }
 
 
