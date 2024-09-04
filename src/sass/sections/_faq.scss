@@ -14,13 +14,43 @@
     }
 
     &__subtitle {
-        color: #e7e7e7;
-        font-size: 54px;
-        font-weight: 600;
-        line-height: 120%;
-        letter-spacing: 1.08px;
-        text-transform: uppercase;
-        margin-bottom: 54px;
+        color: #E7E7E7;
+            font-family: Gilroy;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 28.8px */
+            letter-spacing: 0.48px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        /* 17.5px */
+
+        @media screen and (min-width: 768px) {
+            color: #E7E7E7;
+                font-family: Gilroy;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+                /* 36px */
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            color: #E7E7E7;
+                font-family: Poppins;
+                font-size: 54px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+                /* 64.8px */
+                letter-spacing: 1.08px;
+                text-transform: uppercase;
+            margin-bottom: 54px;
+        }
     }
 
     &__numb {
@@ -32,36 +62,36 @@
         margin-right: 32px;
     }
 
-    &__text-1 {
-        color: #e7e7e7;
-        font-size: 28px;
-        margin-right: 579px;
-        font-weight: 600;
-        line-height: 125%;
-    }
+    &__text {
+        color: rgba(255, 255, 255, 0.80);
+            font-family: Gilroy;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+            /* 17.5px */
 
-    &__text-2 {
-        color: #e7e7e7;
-        font-size: 28px;
-        margin-right: 399px;
-        font-weight: 600;
-        line-height: 125%;
-    }
+        @media screen and (min-width: 768px) {
+        color: rgba(255, 255, 255, 0.80);
+            font-family: Gilroy;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 145%;
+            width: 558px;
+            /* 23.2px */
+        }
 
-    &__text-3 {
-        color: #e7e7e7;
-        font-size: 28px;
-        margin-right: 275px;
-        font-weight: 600;
-        line-height: 125%;
-    }
-
-    &__text-4 {
-        color: #e7e7e7;
-        font-size: 28px;
-        margin-right: 460px;
-        font-weight: 10px;
-        line-height: 125%;
+        @media screen and (min-width: 1200px) {
+            color: #E7E7E7;
+                font-family: Poppins;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 600;
+                width: 995px;
+                line-height: 125%;
+                /* 35px */
+        }
     }
 
     &__button {
@@ -76,15 +106,68 @@
         flex-shrink: 0;
         border-radius: 100px;
         background-color: rgba(255, 255, 255, 0.10);
+    
     }
 
     &__line {
         width: 1440px;
-        height: 0px;
-        opacity: 0.1;
-        // background: $description-color;
+        height: 1px;
+        opacity: 0.2;
+        background: rgba(255, 255, 255, 0.80);
         margin-left: 0;
         margin-top: 24px;
         margin-bottom: 1px;
     }
+}
+
+details {
+    // margin-bottom: 10px;
+    // border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+summary {
+    // padding: 10px;
+    // background-color: #f0f0f0;
+    cursor: pointer;
+    min-width: 1200px;
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.content {
+    // background-color: #fff;
+    // border-top: 1px solid #ccc;
+    padding: 0 10px;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+.fine {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    width: 897px;
+    margin-left: 52px;
 }

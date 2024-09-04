@@ -125,9 +125,11 @@ margin-bottom: 32px;
     margin-bottom: 32px;
 
 
-    @media screen and (min-width: 1768px) {
+
+    @media screen and (min-width: 768px) {
     margin-bottom: 32px;
     }
+
 
 
     @media screen and (min-width: 1330px) {
@@ -147,12 +149,14 @@ margin-bottom: 32px;
 }
 
 
+
     &__photo {        
     }
 
     &__block {}
 
     &__image {
+
     }
 
     &__text {
