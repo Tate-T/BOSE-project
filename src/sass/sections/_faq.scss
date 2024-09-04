@@ -14,13 +14,43 @@
     }
 
     &__subtitle {
-        color: #e7e7e7;
-        font-size: 54px;
-        font-weight: 600;
-        line-height: 120%;
-        letter-spacing: 1.08px;
-        text-transform: uppercase;
-        margin-bottom: 54px;
+        color: #E7E7E7;
+            font-family: Gilroy;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 28.8px */
+            letter-spacing: 0.48px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        /* 17.5px */
+
+        @media screen and (min-width: 768px) {
+            color: #E7E7E7;
+                font-family: Gilroy;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+                /* 36px */
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            color: #E7E7E7;
+                font-family: Poppins;
+                font-size: 54px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 120%;
+                /* 64.8px */
+                letter-spacing: 1.08px;
+                text-transform: uppercase;
+            margin-bottom: 54px;
+        }
     }
 
     &__numb {
@@ -32,37 +62,36 @@
         margin-right: 32px;
     }
 
-    &__text-1 {
-        color: #e7e7e7;
-        font-size: 28px;
-        margin-right: 521px;
-        font-weight: 600;
-        line-height: 125%;
-    }
+    &__text {
+        color: rgba(255, 255, 255, 0.80);
+            font-family: Gilroy;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+            /* 17.5px */
 
-    &__text-2 {
-        color: #e7e7e7;
-        font-size: 28px;
-        margin-right: 339px;
-        font-weight: 600;
-        line-height: 125%;
-    }
+        @media screen and (min-width: 768px) {
+        color: rgba(255, 255, 255, 0.80);
+            font-family: Gilroy;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 145%;
+            width: 558px;
+            /* 23.2px */
+        }
 
-    &__text-3 {
-        color: #3f3131;
-        font-size: 28px;
-        color: #e7e7e7;
-        margin-right: 215px;
-        font-weight: 600;
-        line-height: 125%;
-    }
-
-    &__text-4 {
-        color: #e7e7e7;
-        font-size: 28px;
-        margin-right: 415px;
-        font-weight: 10px;
-        line-height: 125%;
+        @media screen and (min-width: 1200px) {
+            color: #E7E7E7;
+                font-family: Poppins;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 600;
+                width: 995px;
+                line-height: 125%;
+                /* 35px */
+        }
     }
 
     &__button {
@@ -77,13 +106,15 @@
         flex-shrink: 0;
         border-radius: 100px;
         background-color: rgba(255, 255, 255, 0.10);
+    
+    // @min-width: ;
     }
 
     &__line {
         width: 1440px;
-        height: 0px;
-        opacity: 0.1;
-            background: rgba(255, 255, 255, 0.80);
+        height: 1px;
+        opacity: 0.2;
+        background: rgba(255, 255, 255, 0.80);
         margin-left: 0;
         margin-top: 24px;
         margin-bottom: 1px;
@@ -91,7 +122,7 @@
 }
 
 details {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     // border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
@@ -133,11 +164,11 @@ details[open] summary::after {
 
 .fine {
     color: rgba(255, 255, 255, 0.80);
-        font-family: Gilroy;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 145%;
-        width: 897px;
-        margin-left: 52px;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    width: 897px;
+    margin-left: 52px;
 }
