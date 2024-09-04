@@ -18,7 +18,7 @@ function reloadSlider() {
 }
 
 function startAutoSlide() {
-    autoSlide = setInterval(nextSlide, 14000); 
+    autoSlide = setInterval(nextSlide, 7000); 
 }
 
 function stopAutoSlide() {
@@ -32,5 +32,4 @@ let iframes = document.querySelectorAll('.reviews__video');
 iframes.forEach(iframe => {
     iframe.addEventListener('play', stopAutoSlide);
     iframe.addEventListener('pause', startAutoSlide);
-    iframe.addEventListener('ended', startAutoSlide);
 });
