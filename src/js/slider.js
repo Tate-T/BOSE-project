@@ -17,4 +17,4 @@ function reloadslider() {
 }
 
 // Автоматичне перемикання кожні 7 секунд
-let autoslide = setInterval(nextSlide, 14000);
+let autoslide = setInterval(nextSlide, 7000);
