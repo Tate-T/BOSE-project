@@ -9,7 +9,7 @@
         width: 768px;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1320px) {
         margin-bottom: 170px;
         width: 1320px;
     }
@@ -30,7 +30,7 @@
     &__title {
         display: none;
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1320px) {
             color: #E7E7E7;
             font-size: 54px;
             margin-bottom: 50px;
@@ -69,7 +69,7 @@
             text-transform: uppercase;
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1320px) {
             display: none;
         }
     }
@@ -103,7 +103,7 @@
             opacity: 1;
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1320px) {
             color: #DF3D3A;
             font-family: "Roboto Condensed";
             font-size: 28px;
@@ -136,10 +136,10 @@
             opacity: 0.2;
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1320px) {
             color: #DF3D3A;
             font-family: "Roboto Condensed";
-            font-size: 20px;
+            font-size: 28px;
             font-style: normal;
             font-weight: 400;
             display: block;
@@ -156,12 +156,12 @@
         font-weight: 600;
         line-height: 125%;
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1320px) {
             font-size: 28px;
         }
     }
 
-    &__text {
+    &__text-1 {
         max-width: 530px;
         color: rgba(255, 255, 255, 0.80);
         font-size: 16px;
@@ -170,8 +170,38 @@
         font-weight: 400;
         line-height: 145%;
 
-        @media screen and (min-width:1200px) {
-            margin-bottom: 90px;
+        @media screen and (min-width:1320px) {
+            margin-bottom: 35px;
+            font-size: 20px;
+        }
+    }
+
+    &__text-2 {
+        max-width: 530px;
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 16px;
+        font-style: normal;
+        margin-bottom: 30px;
+        font-weight: 400;
+        line-height: 145%;
+
+        @media screen and (min-width:1320px) {
+            margin-bottom: 65px;
+            font-size: 20px;
+        }
+    }
+
+    &__text-3 {
+        max-width: 530px;
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 16px;
+        font-style: normal;
+        margin-bottom: 30px;
+        font-weight: 400;
+        line-height: 145%;
+
+        @media screen and (min-width:1320px) {
+            margin-bottom: 272px;
             font-size: 20px;
         }
     }
@@ -184,11 +214,10 @@
             flex-shrink: 0;
         }
 
-        @media screen and (min-width:1200px) {
-            display: flex;
-            align-items: end;
-            height: 12px;
+        @media screen and (min-width:1320px) {
+            //  align-items: end;
             margin-bottom: 0px;
+            // height: 309px;
         }
     }
 
@@ -201,7 +230,7 @@
             margin-bottom: 0px;
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1320px) {
             display: flex;
             height: 149px;
             align-items: end;
@@ -218,10 +247,11 @@
             margin-bottom: 32px;
         }
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1320px) {
             display: flex;
-            height: 149px;
+            // height: 249px;
             align-items: end;
+            margin-bottom: 0;
         }
     }
 
@@ -235,7 +265,7 @@
         }
 
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1320px) {
             flex-direction: row;
             gap: 150px;
         }
@@ -255,11 +285,12 @@
             margin-bottom: 0px;
         }
 
-        @media screen and (min-width:1200px) {
-            width: 840px;
+        @media screen and (min-width:1320px) {
+            width: 880px;
             height: 590px;
             flex-shrink: 0;
             margin-bottom: -8px;
+            // margin-left: -23px;
         }
     }
 }

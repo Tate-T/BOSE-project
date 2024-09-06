@@ -5,7 +5,7 @@
         margin-bottom: 100px;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1320px) {
         margin-bottom: 170px;
         padding-bottom: -5px;
     }
@@ -15,7 +15,7 @@
         flex-direction: column;
         gap: 24px;
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1320px) {
             display: flex;
             flex-direction: column;
             gap: 112px;
@@ -50,7 +50,7 @@
             margin-bottom: 32px;
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1320px) {
             color: #e7e7e7;
             font-size: 54px;
             font-style: normal;
@@ -83,7 +83,7 @@
             /* 14px */
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1320px) {
             color: #e7e7e7;
             font-family: "Roboto Condensed";
             font-size: 28px;
@@ -114,7 +114,7 @@
             /* 23.2px */
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1320px) {
             color: #e7e7e7;
             font-family: "Poppins";
             font-size: 28px;
@@ -155,7 +155,7 @@
             background-color: rgba(255, 255, 255, 0.1);
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1320px) {
             color: #e7e7e7;
             font-family: Roboto;
             font-size: 28px;
@@ -179,7 +179,7 @@
         margin-top: 24px;
         margin-bottom: 1px;
 
-        @media screen and (min-width:1200px) {
+        @media screen and (min-width:1320px) {
             width: 1440px;
             height: 1px;
             opacity: 0.2;
@@ -252,7 +252,7 @@ details[open] summary::after {
         margin-left: 33px;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1320px) {
         color: rgba(255, 255, 255, 0.8);
         font-size: 20px;
         font-style: normal;
