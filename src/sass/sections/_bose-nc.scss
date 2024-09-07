@@ -306,15 +306,16 @@
    animation: fadein 1.2s ease-in-out forwards;
  }
 
-// .slide {
-//     opacity: 0;   
-//     transition: opacity 1s ease-in-out;
-// }
 
-// .show {
-//     opacity: 1;
-//     visibility: visible;
-// }
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.show {
+    display: block;
+    animation: fadein 1.2s ease-in-out forwards;
+}
 
 @keyframes fadein {
     from {
@@ -368,6 +369,47 @@
     @media screen and (min-width:1320px) {
         display: none;
     }
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
 }
 
 // .item {
