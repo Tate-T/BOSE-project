@@ -1,6 +1,8 @@
 .reviews {
     margin-bottom: 52px;
     width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width:768px) {
         margin-bottom: 100px;
