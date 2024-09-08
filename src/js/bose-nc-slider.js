@@ -1,39 +1,38 @@
-let items = document.querySelectorAll('.slider .item');  // Селекція всіх слайдів
+let items = document.querySelectorAll('.slider .item');  // Вибірка всіх слайдів
 let active = 0;
 let lengthitems = items.length - 1;
-let autoSlide;
 
-// Функція перемикання на наступний слайд
+// Функція для перемикання на наступний слайд
 function nextSlide() {
-    active = (active + 1 > lengthitems) ? 0 : active + 1;  // Безкінечний цикл
+    active = (active + 1 > lengthitems) ? 0 : active + 1;  // Циклічне переключення слайдів
     reloadSlider();
 }
 
-// Функція перемикання на попередній слайд
+// Функція для перемикання на попередній слайд
 function prevSlide() {
-    active = (active - 1 < 0) ? lengthitems : active - 1;  // Безкінечний цикл
+    active = (active - 1 < 0) ? lengthitems : active - 1;  // Циклічне переключення слайдів
     reloadSlider();
 }
 
-// Оновлення слайдера: додавання та видалення класу 'show'
+// Функція для оновлення слайдера: додає/видаляє клас 'show'
 function reloadSlider() {
     items.forEach((slide, index) => {
         if (index === active) {
-            slide.classList.add("show");   // Показуємо активний слайд
-            slide.style.opacity = "1";     // Плавно показуємо слайд
+            slide.classList.add("show");   // Додаємо клас активного слайда
+            slide.style.opacity = "1";     // Показуємо слайд з анімацією
             slide.style.visibility = "visible";
-            slide.style.transition = "opacity 1s ease-in-out"; // Додаємо анімацію
+            slide.style.transition = "opacity 1s ease-in-out"; // Додаємо плавний перехід
         } else {
-            slide.classList.remove("show");  // Прибираємо клас у інших слайдів
+            slide.classList.remove("show");  // Видаляємо клас неактивних слайдів
             slide.style.opacity = "0";       // Приховуємо інші слайди
-            slide.style.visibility = "hidden"; // Забезпечуємо приховання слайдів
+            slide.style.visibility = "hidden";
         }
     });
 }
 
-// Автоматичне перемикання слайдів кожні 5 секунд
+// Автоматичне перемикання слайдів кожні  секунд
 function startAutoSlide() {
-    autoSlide = setInterval(nextSlide, 10000);
+    autoSlide = setInterval(nextSlide, 1500);
 }
 
 // Зупинка автоматичного слайдування
