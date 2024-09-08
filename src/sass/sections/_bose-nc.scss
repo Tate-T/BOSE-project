@@ -1,16 +1,48 @@
 .bose-nc {
-    margin-bottom: 170px;
+    overflow: hidden;
+    margin-bottom: 52px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 100px;
+    }
+
+    @media screen and (min-width:1320px) {
+        margin-bottom: 170px;
+    }
 
     &__title {
         color: #E7E7E7;
-        font-family: 'Popins';
-        font-size: 54px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 600;
         line-height: 120%;
-        /* 64.8px */
-        letter-spacing: 1.08px;
+        /* 28.8px */
+        margin-bottom: 32px;
+        letter-spacing: 0.48px;
         text-transform: uppercase;
+
+        @media screen and (min-width:768px) {
+            color: #E7E7E7;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 36px */
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+
+        @media screen and (min-width:1320px) {
+            color: #E7E7E7;
+            font-size: 54px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 64.8px */
+            letter-spacing: 1.08px;
+            text-transform: uppercase;
+        }
     }
 
     &__way {
@@ -27,28 +59,52 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 69px;
-        height: 69px;
+        width: 44px;
+        height: 44px;
         border-radius: 100px;
+
+        margin-bottom: 52px;
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1320px) {
+            width: 69px;
+            height: 69px;
+        }
     }
 
     &__format-button {
         display: flex;
-        margin-top: 43px;
-        margin-bottom: 43px;
-        gap: 20px;
+        gap: 24px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1320px) {
+            margin-top: 43px;
+            margin-bottom: 43px;
+        }
     }
 
     &__text {
         color: rgba(255, 255, 255, 0.80);
-        font-family: Gilroy;
-        font-size: 16px;
+        font-size: 13px;
         font-style: normal;
         font-weight: 400;
         width: 271px;
         line-height: 125%;
-        margin-right: 109px;
-        /* 20px */
+        margin-right: -13px;
+
+        @media screen and (min-width:768px) {
+            width: 673px;
+        }
+
+        @media screen and (min-width:1320px) {
+            margin-right: 19px;
+            width: 359px;
+            font-size: 16px;
+        }
     }
 
     &__border-2 {
@@ -56,25 +112,47 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 69px;
-        height: 69px;
+        width: 44px;
+        height: 44px;
         border-radius: 100px;
+        margin-bottom: 52px;
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1320px) {
+            width: 69px;
+            height: 69px;
+        }
     }
 
     &__button-1 {
         background: #101010;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         border-radius: 100px;
         flex-shrink: 0;
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1320px) {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     &__button-2 {
         background: white;
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         border-radius: 100px;
         flex-shrink: 0;
+
+        @media screen and (min-width:768px) {}
+
+        @media screen and (min-width:1320px) {
+            width: 50px;
+            height: 50px;
+        }
     }
 
     &__button-1:hover {
@@ -92,16 +170,43 @@
 
     &__minitext {
         color: #DF3D3A;
-        font-family: Roboto;
-        font-size: 54px;
+        font-size: 24px;
         font-style: normal;
-        margin-bottom: 32px;
-        margin-top: 50px;
         font-weight: 600;
+        margin-top: 32px;
         line-height: 120%;
-        /* 64.8px */
-        letter-spacing: 1.08px;
+        /* 28.8px */
+        letter-spacing: 0.48px;
         text-transform: uppercase;
+
+        @media screen and (min-width:768px) {
+            color: #DF3D3A;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 36px */
+            letter-spacing: 0.6px;
+            margin-top: 50px;
+            text-transform: uppercase;
+            width: 294px;
+            height: 58px;
+            flex-shrink: 0;
+        }
+
+        @media screen and (min-width:1320px) {
+            color: #DF3D3A;
+            font-size: 54px;
+            font-style: normal;
+            margin-bottom: 32px;
+            margin-top: 50px;
+            font-weight: 600;
+            line-height: 120%;
+            width: 350px;
+            /* 64.8px */
+            letter-spacing: 1.08px;
+            text-transform: uppercase;
+        }
     }
 
     &__minibutton:hover {
@@ -114,12 +219,13 @@
 
     &__minibutton {
         color: rgba(255, 255, 255, 0.90);
-        font-family: Roboto;
         font-size: 20px;
         background: #DF3D3A;
         font-style: normal;
-        width: 400px;
-        height: 68px;
+        flex-shrink: 0;
+        width: 280px;
+        margin-top: 24px;
+        height: 58px;
         flex-shrink: 0;
         display: flex;
         justify-content: center;
@@ -128,6 +234,27 @@
         line-height: normal;
         letter-spacing: 0.4px;
         text-transform: uppercase;
+
+        @media screen and (min-width:768px) {
+            margin-top: 32px;
+        }
+
+        @media screen and (min-width:1320px) {
+            color: rgba(255, 255, 255, 0.90);
+            font-size: 20px;
+            background: #DF3D3A;
+            font-style: normal;
+            width: 400px;
+            height: 68px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+        }
     }
 
     &__flex-2 {
@@ -136,36 +263,58 @@
     }
 
     &__line {
-        width: 400px;
+        width: 280px;
         height: 1px;
         margin-bottom: 25px;
         margin-top: 26px;
         opacity: 0.1;
         background: rgba(255, 255, 255, 0.80);
+
+        @media screen and (min-width:768px) {
+            width: 705px;
+        }
+
+        @media screen and (min-width:1320px) {
+            width: 400px;
+        }
     }
 }
 
 .forms {
     display: flex;
+    // justify-content: center;
+    align-items: center;
 }
 
 #slideContainer {
     margin: auto;
-    transform: translate(0%, 0%);
-    position: relative;
-    // width: 80%;
-    // max-width: 600px;
     overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // display: flex;
+    justify-content: center;
+    /* Центрування слайдів всередині контейнера */
 }
 
 .slide {
-    display: none;
-}
+     display: none;
+     width: 100%; }
 
 .show {
-    display: block;
-    animation: fadein 1s ease-in-out 0s 1 normal forwards;
-}
+         display: block;
+   animation: fadein 1.2s ease-in-out forwards;
+ }
+
+// .slide {
+//     opacity: 0;   
+//     transition: opacity 1s ease-in-out;
+// }
+
+// .show {
+//     opacity: 1;
+//     visibility: visible;
+// }
 
 @keyframes fadein {
     from {
@@ -176,3 +325,58 @@
         opacity: 1;
     }
 }
+
+/* Виправлені медіа-запити */
+.decktop {
+    display: none;
+
+    @media screen and (min-width: 1320px) {
+        display: block;
+    }
+}
+
+.smart-tablet {
+    display: block;
+    margin-left: -100px;
+
+    @media screen and (min-width: 768px) {
+        width: 150%;
+        height: 150%;
+        flex-shrink: 0;
+    }
+
+    @media screen and (min-width: 1320px) {
+        display: none;
+    }
+}
+
+.minicontainer {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 315px;
+    flex-shrink: 0;
+
+    // margin-left: 100px;
+    // margin-right: auto;
+    @media screen and (min-width:768px) {
+        margin-left: 30px;
+        width: 768px;
+        height: 440px;
+    }
+
+    @media screen and (min-width:1320px) {
+        display: none;
+    }
+}
+
+// .item {
+//     display: none;
+//     opacity: 0;
+//     transition: opacity 0.5s;
+// }
+
+// .item.show {
+//     display: block;
+//     opacity: 1;
+// }

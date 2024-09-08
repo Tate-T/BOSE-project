@@ -1,11 +1,25 @@
 .faq {
-    margin-bottom: 170px;
-    padding-bottom: -5px;
+    margin-bottom: 52px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 100px;
+    }
+
+    @media screen and (min-width:1320px) {
+        margin-bottom: 170px;
+        padding-bottom: -5px;
+    }
 
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 112px;
+        gap: 24px;
+
+        @media screen and (min-width:1320px) {
+            display: flex;
+            flex-direction: column;
+            gap: 112px;
+        }
     }
 
     &__item {
@@ -15,108 +29,165 @@
 
     &__subtitle {
         color: #E7E7E7;
-            font-family: Gilroy;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 120%;
-            /* 28.8px */
-            letter-spacing: 0.48px;
-            text-transform: uppercase;
-            margin-bottom: 32px;
-        /* 17.5px */
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        /* 28.8px */
+        letter-spacing: 0.48px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
 
         @media screen and (min-width: 768px) {
             color: #E7E7E7;
-                font-family: Gilroy;
-                font-size: 30px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 120%;
-                /* 36px */
-                letter-spacing: 0.6px;
-                text-transform: uppercase;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 36px */
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
             margin-bottom: 32px;
         }
 
-        @media screen and (min-width: 1200px) {
-            color: #E7E7E7;
-                font-family: Poppins;
-                font-size: 54px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 120%;
-                /* 64.8px */
-                letter-spacing: 1.08px;
-                text-transform: uppercase;
+        @media screen and (min-width: 1320px) {
+            color: #e7e7e7;
+            font-size: 54px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            /* 64.8px */
+            letter-spacing: 1.08px;
+            text-transform: uppercase;
             margin-bottom: 54px;
         }
     }
 
     &__numb {
-        color: #e7e7e7;
+        color: #E7E7E7;
         font-family: "Roboto Condensed";
-        font-size: 28px;
+        font-size: 20px;
+        font-style: normal;
         font-weight: 400;
-        line-height: 125%;
-        margin-right: 32px;
+        margin-right: 10px;
+        line-height: 70%;
+
+        /* 14px */
+        @media screen and (min-width: 768px) {
+            color: #E7E7E7;
+            font-family: "Roboto Condensed";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 70%;
+            /* 14px */
+        }
+
+        @media screen and (min-width: 1320px) {
+            color: #e7e7e7;
+            font-family: "Roboto Condensed";
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 125%;
+            margin-right: 32px;
+        }
     }
 
     &__text {
-        color: rgba(255, 255, 255, 0.80);
-            font-family: Gilroy;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 125%;
-            /* 17.5px */
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        width: 215px;
+        /* 17.5px */
 
         @media screen and (min-width: 768px) {
-        color: rgba(255, 255, 255, 0.80);
-            font-family: Gilroy;
+            color: rgba(255, 255, 255, 0.8);
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
+            margin-top: -4px;
             line-height: 145%;
-            width: 558px;
+            margin-left: 10px;
+            width: 633px;
             /* 23.2px */
         }
 
-        @media screen and (min-width: 1200px) {
-            color: #E7E7E7;
-                font-family: Poppins;
-                font-size: 28px;
-                font-style: normal;
-                font-weight: 600;
-                width: 995px;
-                line-height: 125%;
-                /* 35px */
+        @media screen and (min-width: 1320px) {
+            color: #e7e7e7;
+            font-family: "Poppins";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            width: 1175px;
+            line-height: 125%;
+
+            /* 35px */
         }
     }
 
     &__button {
-        color: #e7e7e7;
-        font-family: "Roboto Condensed";
-        font-size: 28px;
+        color: #E7E7E7;
+        font-family: "Roboto";
+        font-size: 20px;
         font-style: normal;
+        border-radius: 100px;
+        background-color: rgba(255, 255, 255, 0.1);
         font-weight: 400;
         line-height: 70%;
-        width: 42px;
-        height: 42px;
+        /* 14px */
+        width: 32px;
+        height: 32px;
         flex-shrink: 0;
-        border-radius: 100px;
-        background-color: rgba(255, 255, 255, 0.10);
-    
+
+        @media screen and (min-width: 768px) {
+            color: #e7e7e7;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 70%;
+            margin-top: -1px;
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            border-radius: 100px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        @media screen and (min-width: 1320px) {
+            color: #e7e7e7;
+            font-family: Roboto;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 70%;
+            width: 42px;
+            height: 42px;
+            flex-shrink: 0;
+            border-radius: 100px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     }
 
     &__line {
         width: 1440px;
         height: 1px;
         opacity: 0.2;
-        background: rgba(255, 255, 255, 0.80);
+        background: rgba(255, 255, 255, 0.8);
         margin-left: 0;
         margin-top: 24px;
         margin-bottom: 1px;
+
+        @media screen and (min-width:1320px) {
+            width: 1440px;
+            height: 1px;
+            opacity: 0.2;
+            background: rgba(255, 255, 255, 0.8);
+            margin-left: 0;
+            margin-top: 24px;
+            margin-bottom: 1px;
+        }
     }
 }
 
@@ -142,7 +213,7 @@ summary::-webkit-details-marker {
 }
 
 summary::after {
-    content: '';
+    content: "";
     position: absolute;
     right: 10px;
     color: white;
@@ -162,12 +233,32 @@ details[open] summary::after {
 }
 
 .fine {
-    color: rgba(255, 255, 255, 0.80);
-    font-family: Gilroy;
-    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
-    width: 897px;
-    margin-left: 52px;
+    margin-top: 20px;
+    width: 220px;
+    margin-left: 22px;
+
+    @media screen and (min-width:768px) {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 145%;
+        width: 679px;
+        margin-left: 33px;
+    }
+
+    @media screen and (min-width:1320px) {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 145%;
+        width: 897px;
+        margin-left: 52px;
+    }
 }
